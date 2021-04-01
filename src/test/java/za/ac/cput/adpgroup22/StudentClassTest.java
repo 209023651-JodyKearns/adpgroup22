@@ -32,6 +32,14 @@ public class StudentClassTest {
     private String studentName3;
     private String studentName4;
     private String studentName5;
+
+    @BeforeAll
+    public static void setUpClass() throws Exception {
+    }
+
+    @AfterAll
+    public static void tearDownClass() throws Exception {
+    }
     
     @BeforeEach
     public void setUp() {
@@ -46,7 +54,7 @@ public class StudentClassTest {
         studentName4 = "Jon Jones";
         studentName5 = studentName2;
     }
-     
+
     @Test
     public void testIdentity(){                 //Object Identity
         assertSame(studentMarks1, studentMarks1);
@@ -104,5 +112,6 @@ public class StudentClassTest {
         String result = instance.toString();
         assertEquals(expResult, result);
     }   
+    
 }
 
