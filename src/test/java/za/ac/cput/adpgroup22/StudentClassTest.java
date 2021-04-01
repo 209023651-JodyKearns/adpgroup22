@@ -104,9 +104,5 @@ public class StudentClassTest {
         String result = instance.toString();
         assertEquals(expResult, result);
     }   
-
-    private void assertSame(int studentMarks1, int studentMarks10) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
 
